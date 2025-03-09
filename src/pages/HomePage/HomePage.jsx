@@ -1,4 +1,4 @@
-import  fetchMovies  from '../../api/api';
+import  {fetchMovies}  from '../../api/api';
 import { useState, useEffect } from 'react';
 
 import MovieList from '../../components/MovieList/MovieList';
@@ -9,8 +9,8 @@ const HomePage = () => {
   useEffect(() => {
     fetchMovies().then((data) =>setMovies(data.results))
 
-    console.log(movies)
-  }, [movies]);
+    
+  }, []);
    
   return (
     <main>
