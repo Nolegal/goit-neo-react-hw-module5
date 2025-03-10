@@ -8,7 +8,7 @@ import {
 import MovieCard from "../../components/MovieCard/MovieCard";
 import { fetchMovieById } from '../../api/api';
 import css from './MovieDetailsPage.module.css';
-// import { FaArrowLeft } from "react-icons/fa";
+import { FaArrowLeft } from "react-icons/fa";
 
 
 
@@ -28,7 +28,7 @@ const MovieDetailsPage = () => {
     <div className="container">
       
     <Link className={"go-back-link"} to={goBackLink.current}>
-       {/*  <FaArrowLeft/>  */} Go back
+        <FaArrowLeft/>  Go back
     </Link>
     <MovieCard movie={movie} />
     <hr />
